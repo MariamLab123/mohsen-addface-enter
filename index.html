@@ -14,7 +14,7 @@
         body{
             background-color:azure;
         }
-        button{
+        .button{
             display:none;
             background-color:brown;
             border-radius:15px;
@@ -45,19 +45,35 @@
             outline:none;
             margin:15px;
         }
+        .buttonbbb{
+            background-color:brown;
+            border-radius:15px;
+            font-size:30px;
+            margin:15px;
+        }
+        .buttonbbb:hover{
+            background-color:rgb(189, 79, 79);
+            border-radius:15px;
+            font-size:30px;
+            margin:15px;
+        }
     </style>
 </head>
 <body>
     <center>
     <h1>Enter The Password</h1>
     <input class="input">
-    <a href="https://mariamlab123.github.io/mohsen-addface/"><button>Next</button></a>
+    <button class="buttonbbb">Enter</button>
+    <a href="https://mariamlab123.github.io/mohsen-addface/"><button class="button">Next</button></a>
     </center>
     <script>
         const text=document.getElementsByClassName("input")[0];
-        const b=document.getElementsByTagName("button")[0];
+        const b=document.getElementsByClassName("button")[0];
+        const e=document.getElementsByClassName("buttonbbb")[0];
+        e.onclick=function(){
         if(text.value=="global123"){
             b.style.display="flex";
+        }
         }
     </script>
 </body>
