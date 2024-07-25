@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border:0;
+            margin:0;
+            text-decoration:none;
+            font-family:sans-serif;
+        }
+        body{
+            background-color:azure;
+        }
+        button{
+            display:none;
+            background-color:brown;
+            border-radius:15px;
+            font-size:30px;
+            margin:15px;
+        }
+        button:hover{
+            display:none;
+            background-color:rgb(210, 81, 81);
+            border-radius:15px;
+            font-size:30px;
+            margin:15px;
+            cursor:pointer;
+        }
+        input{
+            background-color:brown;
+            width:400px;
+            height:50px;
+            border-radius:10px;
+            outline:none;
+            margin:15px;
+        }
+        input:hover{
+            background-color:rgb(121, 26, 26);
+            width:400px;
+            height:50px;
+            border-radius:10px;
+            outline:none;
+            margin:15px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Enter The Password</h1>
+    <input class="input">
+    <a href="https://mariamlab123.github.io/mohsen-addface/"><button>Next</button></a>
+    </center>
+    <script>
+        const text=document.getElementsByClassName("input")[0];
+        const b=document.getElementsByTagName("button")[0];
+        if(text.value=="global123"){
+            b.style.display="flex";
+        }
+    </script>
+</body>
+</html>
