@@ -21,6 +21,13 @@
             font-size:30px;
             margin:15px;
         }
+        .buttonn{
+            display:none;
+            background-color:brown;
+            border-radius:15px;
+            font-size:30px;
+            margin:15px;
+        }
         input{
             background-color:brown;
             width:300px;
@@ -56,19 +63,21 @@
     <h1>Enter The Password</h1>
     <input class="input">
     <button class="buttonbbb">Enter</button>
-    <a href="https://mariamlab123.github.io/mohsen-addface/"><button class="button">Next</button></a>
+    <a href="https://mariamlab123.github.io/mohsen-addface/"><button class="button">Next Mariam</button></a>
+    <a href="https://mariamlab123.github.io/Mohsen-Addface-Remas123/"><button class="buttonn">Next Remas</button></a>
        
     </center>
     <script>
         const text=document.getElementsByClassName("input")[0];
         const b=document.getElementsByClassName("button")[0];
+        const b2=document.getElementsByClassName("buttonn")[0];
         const e=document.getElementsByClassName("buttonbbb")[0];
         e.onclick=function(){
         if(text.value=="global123"){
             b.style.display="flex";
         }
         else if(text.value=="r123s123"){
-            b.style.display="flex";
+            b2.style.display="flex";
         }
         }
         setTimeout(document.write("<font color='red'><p>الموقع غير قادر على تشغيل اكثر من 10 مستخدمين في وقت واحد انا اسف يمكن معرفة رمز الموقع و استخدامه بسرعة شديدة</p></font>") , 7000)
